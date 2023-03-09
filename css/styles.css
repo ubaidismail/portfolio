@@ -4727,6 +4727,10 @@ h1.masthead-heading.text-uppercase.mb-0 {
 p.masthead-subheading.font-weight-light.mb-0 {
   z-index: 99;
 }
+a.nav-link.py-3.px-0.px-lg-3.rounded.active-always {
+  padding-left: 10px !important;
+  text-align: center;
+}
 @media (min-width: 576px) {
   .navbar-expand-sm {
     flex-wrap: nowrap;
