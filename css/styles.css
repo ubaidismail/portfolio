@@ -107,11 +107,14 @@
    .profile-img img {
      width: 100%;
    }
+   section.head h2{
 
-   section.head h1,
-   section.head h2 {
+     margin-top: 0;
+   }
+   section.head h1
+    {
      font-size: 36px;
-     margin-top: 20px;
+     margin-top: 25px;
    }
 
    section.fixed-sec ul {
