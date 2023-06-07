@@ -52,7 +52,7 @@
  section.fixed-sec ul {
    position: fixed;
    z-index: 999;
-   top: 38%;
+   top: 23%;
    right: 26px;
    list-style: none;
  }
@@ -116,5 +116,16 @@
 
    section.fixed-sec ul {
      top: 25% !important;
+     position: static;
+     text-align: center;
+     padding-left: 0;
+   }
+   section.fixed-sec ul li {
+     display: inline-block;
+     margin: 0 11px;
+   }
+
+   section.head {
+     text-align: center;
    }
  }
