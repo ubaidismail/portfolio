@@ -26,6 +26,8 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
       <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
    </head>
    <!-- body -->
    <body class="main-layout">
@@ -36,7 +38,8 @@
       <script>
         $(document).ready(function(){
             $('.alert_email').click(function(){
-               alert('ubaidismail378@gmail.com');
+
+               Swal.fire("ubaidismail378@gmail.com");
             }) 
         })
       </script>
@@ -70,6 +73,9 @@
                            </li>
                            <li class="nav-item">
                               <a class="nav-link" class="alert_email" href="javascript:void(0)">Contact</a>
+                           </li>
+                            <li class="nav-item">
+                              <a class="nav-link" target="_blank" href="https://api.whatsapp.com/send?phone=971507364124&text=Hello!%C2%A0Can%C2%A0you%C2%A0help%C2%A0me?"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
                            </li>
                         </ul>
                      </div>
