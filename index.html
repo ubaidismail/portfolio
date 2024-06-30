@@ -1,582 +1,241 @@
 <!DOCTYPE html>
-<html lang="en">
-   <head>
-      <!-- basic -->
-      <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <!-- mobile metas -->
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
-      <!-- site metas -->
-      <title>Ubaid Ismail</title>
-      <meta name="keywords" content="">
-      <meta name="description" content="">
-      <meta name="author" content="">
-      <!-- bootstrap css -->
-      <link rel="stylesheet" href="css/bootstrap.min.css">
-      <!-- style css -->
-      <link rel="stylesheet" href="css/style.css">
-      <!-- Responsive-->
-      <link rel="stylesheet" href="css/responsive.css">
-      <!-- fevicon -->
-      <link rel="icon" href="images/fav.png" type="image/gif" />
-      <!-- Tweaks for older IEs-->
-      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
-      
-      <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<html>
 
-   </head>
-   <!-- body -->
-   <body class="main-layout">
-    
-      <script>
-        $(document).ready(function(){
-            $('.alert_email').click(function(){
+<head>
+   <title>Ubaid Ismail</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+   <style>
+      body,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+         font-family: "Montserrat", sans-serif
+      }
 
-               Swal.fire("ubaidismail378@gmail.com");
-            }) 
-        })
-      </script>
-      <div class="header">
-         <div class="container-fluid">
-            <div class="row d_flex">
-               <div class=" col-md-2 col-sm-3 col logo_section">
-                  <div class="full">
-                     <div class="center-desk">
-                        <div class="logo">
-                          <h1>Ubaid Ismail</h1>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-md-8 col-sm-12">
-                  <nav class="navigation navbar navbar-expand-md navbar-dark ">
-                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
-                     <span class="navbar-toggler-icon"></span>
-                     </button>
-                     <div class="collapse navbar-collapse" id="navbarsExample04">
-                        <ul class="navbar-nav mr-auto">
-                           <li class="nav-item active">
-                              <a class="nav-link" href="index.html">Home</a>
-                           </li>
-                           <li class="nav-item">
-                              <a class="nav-link" href="CV/ubaidCV Resume.pdf" target="_blank" download="download">Resume</a>
-                           </li>
-                           <li class="nav-item">
-                              <a class="nav-link" href="https://www.linkedin.com/in/ubaidismail/" target="_blank">Scoials</a>
-                           </li>
-                           <li class="nav-item">
-                              <a class="nav-link alert_email"  href="javascript:void(0)">Contact</a> 
-                           </li>
-                            <li class="nav-item">
-                              <a class="nav-link" target="_blank" href="https://api.whatsapp.com/send?phone=971507364124&text=Hello!%C2%A0Can%C2%A0you%C2%A0help%C2%A0me?"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
-                           </li>
-                        </ul>
-                     </div>
-                  </nav>
-               </div>
-               <div class="col-md-2">
-                  <ul class="email text_align_right">
-                     <!-- <li class="d_none"><a href="Javascript:void(0)"><i class="fa fa-user" aria-hidden="true"></i></a></li> -->
-                     <!-- <li class="d_none"> <a href="Javascript:void(0)"><i class="fa fa-search" style="cursor: pointer;" aria-hidden="true"></i></a> </li> -->
-                  </ul>
-               </div>
-            </div>
-         </div>
+      .w3-row-padding img {
+         margin-bottom: 12px
+      }
+
+      /* Set the width of the sidebar to 120px */
+      .w3-sidebar {
+         width: 120px;
+         background: #222;
+      }
+
+      /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+      #main {
+         margin-left: 120px
+      }
+
+      /* Remove margins from "page content" on small screens */
+      @media only screen and (max-width: 600px) {
+         #main {
+            margin-left: 0
+         }
+      }
+   </style>
+</head>
+
+<body class="w3-black">
+
+   <!-- Icon Bar (Sidebar - hidden on small screens) -->
+   <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+      <!-- Avatar image in top left corner -->
+      <!-- <img src="images/photo-ub-re.png" style="width:100%;"> -->
+      <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+         <i class="fa fa-home w3-xxlarge"></i>
+         <p>HOME</p>
+      </a>
+      <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+         <i class="fa fa-user w3-xxlarge"></i>
+         <p>ABOUT</p>
+      </a>
+      <!-- <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+         <i class="fa fa-eye w3-xxlarge"></i>
+         <p>PHOTOS</p>
+      </a> -->
+      <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+         <i class="fa fa-envelope w3-xxlarge"></i>
+         <p>Contact</p>
+      </a>
+   </nav>
+
+   <!-- Navbar on small screens (Hidden on medium and large screens) -->
+   <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+      <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+         <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+         <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+         <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
+         <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
       </div>
-      <!-- end header inner -->
-      <!-- end header -->
-      <!-- top -->
-      <div class="full_bg">
-         <div class="slider_main">
-            <div class="container-fluid">
-               <div class="row">
-                  <div class="col-md-12">
-                     <!-- carousel code -->
-                     <div id="carouselExampleIndicators" class="carousel slide">
-                        <ol class="carousel-indicators">
-                           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                           <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                           <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                        </ol>
-                        <div class="carousel-inner">
-                           <!-- first slide -->
-                           <div class="carousel-item active">
-                              <div class="carousel-caption relative" style="margin-top:47px;">
-                                 <div class="row d_flex">
-                                    <div  class="col-md-5">
-                                       <div class="board">
-                                          <i><img src="images/top_icon.png" alt="#"/></i>
-                                          <h3>
-                                             Full-Stack<br> Developer
-                                          </h3>
-                                          <div class="link_btn">
-                                             <a class="read_more" href="mailto:ubaidismail378@gmail.com">Get Proposal   <span></span></a>
-                                          </div>
-                                       </div>
-                                    </div>
-                                    <div class="col-md-7">
-                                       <div class="banner_img">
-                                          <figure><img class="img_responsive" src="images/saas.jpg"></figure>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                           <!-- second slide -->
-                           <div class="carousel-item">
-                              <div class="carousel-caption relative" style="margin-top:47px;">
-                                 <div class="row d_flex">
-                                    <div  class="col-md-5">
-                                       <div class="board">
-                                          <i><img src="images/top_icon.png" alt="#"/></i>
-                                          <h3>
-                                             SaaS<br> Solution
-                                          </h3>
-                                          <div class="link_btn">
-                                             <a class="read_more" href="mailto:ubaidismail378@gmail.com">Get Proposal   <span></span></a>
-                                          </div>
-                                       </div>
-                                    </div>
-                                    <div class="col-md-7">
-                                       <div class="banner_img">
-                                          <figure><img class="img_responsive" src="images/saas.jpg"></figure>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                           <!-- third slide-->
-                           <div class="carousel-item">
-                              <div class="carousel-caption relative">
-                                 <div class="row d_flex">
-                                    <div  class="col-md-5">
-                                       <div class="board">
-                                          <i><img src="images/top_icon.png" alt="#"/></i>
-                                          <h3>
-                                             WordPress<br> Expert
-                                          </h3>
-                                          <div class="link_btn">
-                                             <a class="read_more" href="mailto:ubaidismail378@gmail.com">Get Proposal   <span></span></a>
-                                          </div>
-                                       </div>
-                                    </div>
-                                    <div class="col-md-7">
-                                       <div class="banner_img">
-                                          <figure><img class="img_responsive" src="images/wordpress.jpg"></figure>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <!-- controls -->
-                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                        <i class="fa fa-arrow-left" aria-hidden="true"></i>
-                        <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                        <i class="fa fa-arrow-right" aria-hidden="true"></i>
-                        <span class="sr-only">Next</span>
-                        </a>
-                     </div>
-                  </div>
-               </div>
+   </div>
+
+   <!-- Page Content -->
+   <div class="w3-padding-large" id="main">
+      <!-- Header/Home -->
+      <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+         <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> Ubaid Ismail.</h1>
+         <p>Software Developer</p>
+         <!-- <img src="/w3images/man_smoke.jpg" alt="boy" class="w3-image" width="992" height="1108"> -->
+      </header>
+
+      <!-- About Section -->
+      <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+         <h2 class="w3-text-light-grey">Ubaid Ismail</h2>
+         <hr style="width:200px" class="w3-opacity">
+         <p>
+            A full stack developer with over 5 years of experience in designing, developing, and maintaining websites,
+            web applications, and SaaS solutions. My expertise spans across various stages of the development lifecycle,
+            including requirements gathering, architecture design, coding, testing, and deployment. I am proficient in a
+            wide range of technologies, including HTML, CSS, JavaScript, React, PHP, Node.js, and various back-end
+            frameworks. Additionally, I have experience with database management, version control systems, and cloud
+            services.
+
+            I am currently working as an external developer for international clients and companies, where I provide
+            high-quality development services tailored to their specific needs. My role involves collaborating closely
+            with clients to understand their requirements, suggesting best practices, and delivering robust and scalable
+            solutions.
+         </p>
+         <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
+         <ul class="skills-tab">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Bootstrap</li>
+            <li>Scss</li>
+            <li>JavaScript</li>
+            <li>jQuery</li>
+            <li>MERN</li>
+            <li>Php</li>
+            <li>Codeigniter</li>
+            <li>MySQL</li>
+            <li>MongoDB</li>
+            <li>Git Github</li>
+            <li>Cloud Services</li>
+            <li>Project Management</li>
+
+         </ul>
+
+         <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
+            <div class="w3-quarter w3-section">
+               <span class="w3-xlarge">6+</span><br>
+               Partners
+            </div>
+            <div class="w3-quarter w3-section">
+               <span class="w3-xlarge">47+</span><br>
+               Projects Done
+            </div>
+            <div class="w3-quarter w3-section">
+               <span class="w3-xlarge">89+</span><br>
+               Happy Clients
+            </div>
+            <div class="w3-quarter w3-section">
+               <span class="w3-xlarge">150+</span><br>
+               Meetings
             </div>
          </div>
+
+         <button class="w3-button w3-light-grey w3-padding-large w3-section">
+            <a href="CV/ubaidCV Resume.pdf" download="ubaidCV"><i class="fa fa-download"></i> Download Resume</a>
+         </button>
+
+         <!-- Testimonials -->
+         <div class="testimonial-area">
+            <h3 class="w3-padding-24 w3-text-light-grey">My Reputation</h3>
+            <div class="block-testi">
+               <div class="texti-inner">
+                  <img src="images/profile.png" alt="Avatar" class="w3-left w3-circle w3-margin-right"
+                     style="width:80px">
+               </div>
+               <div class="texti-inner">
+                  <p><span class="w3-large w3-margin-right">Arjun.</span> CTO at <strong>Pet Health Harbour</strong>.</p>
+                  <p>Ubaid was exceptionally well equipped to deliver this difficult task. He not only solved the issue
+                     but also gave us more than expected. He always gives his best. Code quality and work ethics are top
+                     notch. Will hire him again.</p>
+               </div>
+            </div>
+            <div class="block-testi">
+               <div class="texti-inner">
+                  <img src="images/profile.png" alt="Avatar" class="w3-left w3-circle w3-margin-right"
+                     style="width:80px">
+               </div>
+               <div class="texti-inner">
+                  <p><span class="w3-large w3-margin-right">Robert.</span> CEO at <b>Alphaedge</b>.</p>
+                  <p>The project was implemented quickly and accurately</p>
+               </div>
+            </div>
+            <div class="block-testi">
+               <div class="texti-inner">
+                  <img src="images/profile.png" alt="Avatar" class="w3-left w3-circle w3-margin-right"
+                     style="width:80px">
+               </div>
+               <div class="texti-inner">
+                  <p><span class="w3-large w3-margin-right">Silviu Andrei Damian.</span> CEO at 𝗖𝗿𝗶𝗽𝘁𝗼𝘃𝗮𝗹𝘂𝘁𝗲 𝗚𝗿𝘂𝗽𝗽𝗼 𝗜𝘁𝗮𝗹𝗶𝗮𝗻𝗼 </p>
+                  <p>They did a great job, realizing my website. Even in the face of new requests and problems they were efficient and fast!
+                  </p>
+               </div>
+            </div>
+
+         </div> <!-- End About Section -->
       </div>
 
-      <!-- skills -->
-      <section class="skills">
-         <h3>Skill Set</h3>
-         <div class="container">
-            <div class="skillbar clearfix " data-percent="95%">
-              <div class="skillbar-title" style="background: #970cc1;"><span>PHP/Codeigniter</span></div>
-              <div class="skillbar-bar one"></div>
-              <div class="skill-bar-percent">95%</div>
-            </div>
-            <!-- Ende Skill Bar -->
-            <div class="skillbar clearfix " data-percent="90%">
-              <div class="skillbar-title" style="background: #DD1E2F;"><span>MYSQL</span></div>
-              <div class="skillbar-bar two"></div>
-              <div class="skill-bar-percent">90%</div>
-            </div>
-            <!-- Ende Skill Bar -->
-            <div class="skillbar clearfix " data-percent="100%">
-              <div class="skillbar-title" style="background: #192823;"><span>HTML/CSS/Bootstrap</span></div>
-              <div class="skillbar-bar three"></div>
-              <div class="skill-bar-percent">100%</div>
-            </div>
-            <!-- Ende Skill Bar -->
-            <div class="skillbar clearfix " data-percent="80%">
-              <div class="skillbar-title" style="background: #EBB035;"><span>Javascript</span></div>
-              <div class="skillbar-bar four"></div>
-              <div class="skill-bar-percent">80%</div>
-            </div>
-            <!-- Ende Skill Bar -->
-            <div class="skillbar clearfix " data-percent="80%">
-              <div class="skillbar-title" style="background:  #55a69f;"><span>MERN</span></div>
-          
-              <div class="skillbar-bar five"></div>
-              <div class="skill-bar-percent">80%</div>
-            </div>
-            <!-- Ende Skill Bar -->
-            <div class="skillbar clearfix " data-percent="90%">
-              <div class="skillbar-title" style="background: #06A2CB;"><span>Wordpress</span></div>
-              <div class="skillbar-bar six"></div>
-              <div class="skill-bar-percent">90%</div>
-            </div>
-            <!-- Ende Skill Bar -->
-            <div class="skillbar clearfix " data-percent="60%">
-              <div class="skillbar-title" style="background: #218559;"><span>Shopify</span></div>
-              <div class="skillbar-bar seven"></div>
-              <div class="skill-bar-percent">60%</div>
-            </div>
-            <!-- Ende Skill Bar -->
-          </div>
-      </section>
-       <!-- Ende container Skill Bar -->
-      <!-- skills -->
+      <!-- Portfolio Section -->
+      <!-- <div class="w3-padding-64 w3-content" id="photos">
+         <h2 class="w3-text-light-grey">My Photos</h2>
+         <hr style="width:200px" class="w3-opacity"> -->
 
-      <!-- end banner -->
-      <!-- our class -->
-      <!-- <div class="class">
-         <div class="container">
-            <div class="row">
-               <div class="col-md-12">
-                  <div class="titlepage text_align_center">
-                     <h2>Projects</h2>
-                     <p>Variations Of Projects</p>
-                  </div>
-               </div>
+      <!-- Grid for photos -->
+      <!-- <div class="w3-row-padding" style="margin:0 -16px">
+            <div class="w3-half">
+               <img src="/w3images/wedding.jpg" style="width:100%">
+               <img src="/w3images/rocks.jpg" style="width:100%">
+               <img src="/w3images/sailboat.jpg" style="width:100%">
             </div>
-            <div class="row">
-               <div class="col-md-4 margi_bottom">
-                  <div class="class_box text_align_center">
-                     <i><img src="images/class1.png" alt="#"/></i>
-                     <h3>Skateboard</h3>
-                     <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alterationThere are many variations </p>
-                  </div>
-                  <a class="read_more" href="Javascript:void(0)">Read More</a>
-               </div>
-               <div class="col-md-4 margi_bottom">
-                  <div class="class_box blue text_align_center">
-                     <i><img src="images/class2.png" alt="#"/></i>
-                     <h3>Skateboard</h3>
-                     <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alterationThere are many variations </p>
-                  </div>
-                  <a class="read_more" href="Javascript:void(0)">Read More</a>
-               </div>
-               <div class="col-md-4 margi_bottom">
-                  <div class="class_box text_align_center">
-                     <i><img src="images/class3.png" alt="#"/></i>
-                     <h3>Skateboard</h3>
-                     <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alterationThere are many variations </p>
-                  </div>
-                  <a class="read_more" href="Javascript:void(0)">Read More</a>
-               </div>
+
+            <div class="w3-half">
+               <img src="/w3images/underwater.jpg" style="width:100%">
+               <img src="/w3images/chef.jpg" style="width:100%">
+               <img src="/w3images/wedding.jpg" style="width:100%">
+               <img src="/w3images/p6.jpg" style="width:100%">
             </div>
-         </div>
-      </div> -->
-      <!-- end our class -->
-      <!-- about -->
-      <!-- <div class="about">
-         <div class="container-fluid">
-            <div class="row d_flex">
-               <div class="col-md-6">
-                  <div class="titlepage text_align_left">
-                     <h2>About <br>Skating <br> school</h2>
-                     <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alterationThere are many variatioThere are many variations of passages of Lorem Ipsum available, but the majority have suffered alterationThere are many variationsns
-                     </p>
-                     <div class="link_btn">
-                        <a class="read_more" href="about.html">Read More</a>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-md-6">
-                  <div class="about_img text_align_center">
-                     <figure><img src="images/about.png" alt="#"/></figure>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div> -->
-      <!-- end about -->
-      <!-- skating -->
-      <!-- <div class="skating">
-         <div class="container-fluid">
-            <div class="row">
-               <div class="col-md-12">
-                  <div class="titlepage text_align_center">
-                     <h2>Skating  Video</h2>
-                     <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
-                     </p>
-                  </div>
-               </div>
-            </div>
-            <div class="row">
-               <div class="col-md-4">
-                  <div class="skating-box ">
-                     <figure><img src="images/sakt1.png" alt="#"/></figure>
-                     <div class="link_btn">
-                        <a class="read_more" href="Javascript:void(0)">See More</a>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-md-4">
-                  <div class="skating-box">
-                     <figure><img src="images/sakt2.png" alt="#"/></figure>
-                     <div class="link_btn">
-                        <a class="read_more" href="Javascript:void(0)">See More</a>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-md-4">
-                  <div class="skating-box">
-                     <figure><img src="images/sakt3.png" alt="#"/></figure>
-                     <div class="link_btn">
-                        <a class="read_more" href="Javascript:void(0)">See More</a>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div> -->
-      <!-- end skating -->
-      <!-- shop -->
-      <!-- <div class="shop">
-         <div class="container-fluid">
-            <div class="row d_flex d_grid">
-               <div class="col-md-7">
-                  <div class="shop_img text_align_center" data-aos="fade-right">
-                     <figure><img class="img_responsive" src="images/shop.png" alt="#"/></figure>
-                  </div>
-               </div>
-               <div class="col-md-5 order_1_mobile">
-                  <div class="titlepage text_align_left ">
-                     <h2>Our  Skate <br>Shop</h2>
-                     <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alterationThere are many variatioThere are many variations of passages of Lorem Ipsum available, but the majority have suffered alterationThere are many variationsns
-                     </p>
-                     <a class="read_more" href="shop.html">Buy Now</a>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div> -->
-      <!-- end shop -->
-      <!-- testimonial -->
-      <!-- <div class="testimonial">
-         <div class="container">
-            <div class="row">
-               <div class="col-sm-12">
-                  <div class="titlepage text_align_center">
-                     <h2>Testimonial</h2>
-                  </div>
-               </div>
-            </div> -->
-            <!-- start slider section -->
-            <!-- <div class="row">
-               <div class="col-md-12">
-                  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                     <ol class="carousel-indicators">
-                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#myCarousel" data-slide-to="1"></li>
-                        <li data-target="#myCarousel" data-slide-to="2"></li>
-                     </ol>
-                     <div class="carousel-inner">
-                        <div class="carousel-item active">
-                           <div class="container-fluid">
-                              <div class="carousel-caption relative">
-                                 <div class="row d_flex">
-                                    <div class="col-md-3">
-                                       <div class="test_box text_align_center">
-                                          <span><img src="images/test1.png" alt="#"/></span>
-                                          <h4>Jone Lo</h4>
-                                          <img class="img_responsive" src="images/te.png" alt="#"/>
-                                          <p>humour, or randomised words which don't look even slightly believable. If you are</p>
-                                       </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                       <div class="test_box white_bg text_align_center">
-                                          <span><img src="images/test2.png" alt="#"/></span>
-                                          <h4>Michale</h4>
-                                          <img class="img_responsive" src="images/te2.png" alt="#"/>
-                                          <p>humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure</p>
-                                       </div>
-                                    </div>
-                                    <div class="col-md-3">
-                                       <div class="test_box text_align_center">
-                                          <span><img src="images/test3.png" alt="#"/></span>
-                                          <h4>Disol</h4>
-                                          <img class="img_responsive" src="images/te.png" alt="#"/>
-                                          <p>humour, or randomised words which don't look even slightly believable. If you are</p>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="carousel-item">
-                           <div class="container-fluid">
-                              <div class="carousel-caption relative">
-                                 <div class="row d_flex">
-                                    <div class="col-md-3">
-                                       <div class="test_box text_align_center">
-                                          <span><img src="images/test2.png" alt="#"/></span>
-                                          <h4>Michale</h4>
-                                          <img class="img_responsive" src="images/te.png" alt="#"/>
-                                          <p>humour, or randomised words which don't look even slightly believable. If you are</p>
-                                       </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                       <div class="test_box white_bg text_align_center">
-                                          <span><img src="images/test3.png" alt="#"/></span>
-                                          <h4>Disol</h4>
-                                          <img class="img_responsive" src="images/te2.png" alt="#"/>
-                                          <p> humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure</p>
-                                       </div>
-                                    </div>
-                                    <div class="col-md-3">
-                                       <div class="test_box text_align_center">
-                                          <span><img src="images/test1.png" alt="#"/></span>
-                                          <h4>Jone Lo</h4>
-                                          <img class="img_responsive" src="images/te.png" alt="#"/>
-                                          <p>humour, or randomised words which don't look even slightly believable. If you are</p>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="carousel-item">
-                           <div class="container-fluid">
-                              <div class="carousel-caption relative">
-                                 <div class="row d_flex">
-                                    <div class="col-md-3">
-                                       <div class="test_box text_align_center">
-                                          <span><img src="images/test3.png" alt="#"/></span>
-                                          <h4>Disol</h4>
-                                          <img class="img_responsive" src="images/te.png" alt="#"/>
-                                          <p>humour, or randomised words which don't look even slightly believable. If you are</p>
-                                       </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                       <div class="test_box  white_bg text_align_center">
-                                          <span><img src="images/test1.png" alt="#"/></span>
-                                          <h4>Jone Lo</h4>
-                                          <img class="img_responsive" src="images/te2.png" alt="#"/>
-                                          <p> humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure</p>
-                                       </div>
-                                    </div>
-                                    <div class="col-md-3">
-                                       <div class="test_box text_align_center">
-                                          <span><img src="images/test2.png" alt="#"/></span>
-                                          <h4>Michale</h4>
-                                          <img class="img_responsive" src="images/te.png" alt="#"/>
-                                          <p>humour, or randomised words which don't look even slightly believable. If you are</p>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-                     <i class="fa fa-angle-left" aria-hidden="true"></i>
-                     <span class="sr-only">Previous</span>
-                     </a>
-                     <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-                     <i class="fa fa-angle-right" aria-hidden="true"></i>
-                     <span class="sr-only">Next</span>
-                     </a>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div> -->
-      <!-- end testimonial -->
-      <!--  footer -->
-      <footer>
-         <div class="footer">
-            <!-- <div class="container">
-               <div class="row">
-                  <div class="col-md-4 ">
-                     <div class="infoma">
-                        <h3>Contact Us</h3>
-                        <ul class="conta">
-                           <li><i class="fa fa-map-marker" aria-hidden="true"></i>Locations 
-                           </li>
-                           <li><i class="fa fa-phone" aria-hidden="true"></i>Call +01 1234567890</li>
-                           <li> <i class="fa fa-envelope" aria-hidden="true"></i><a href="Javascript:void(0)"> demo@gmail.com</a></li>
-                        </ul>
-                     </div>
-                  </div>
-                  <div class="col-md-8">
-                     <div class="row border_left">
-                        <div class="col-md-12">
-                           <div class="infoma">
-                              <h3>Newsletter</h3>
-                              <form class="form_subscri">
-                                 <div class="row">
-                                    <div class="col-md-12">
-                                    </div>
-                                    <div class="col-md-4">
-                                       <input class="newsl" placeholder="Enter your email" type="text" name="Enter your email">
-                                    </div>
-                                    <div class="col-md-4">
-                                       <input class="newsl" placeholder="Enter your email" type="text" name="Enter your email">
-                                    </div>
-                                    <div class="col-md-4">
-                                       <button class="subsci_btn">subscribe</button>
-                                    </div>
-                                 </div>
-                              </form>
-                           </div>
-                        </div>
-                        <div class="col-md-9">
-                           <div class="infoma">
-                              <h3>Useful Link</h3>
-                              <ul class="fullink">
-                                 <li><a href="index.html">Home</a></li>
-                                 <li><a href="about.html">About</a></li>
-                                 <li><a href="skating.html">Skating</a></li>
-                                 <li><a href="shop.html">Shop</a></li>
-                                 <li><a href="contact.html">Contact Us</a></li>
-                              </ul>
-                           </div>
-                        </div>
-                        <div class="col-md-3">
-                           <div class="infoma text_align_left">
-                              <ul class="social_icon">
-                                 <li><a href="Javascript:void(0)"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                 <li><a href="Javascript:void(0)"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                 <li><a href="Javascript:void(0)"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
-                                 <li><a href="Javascript:void(0)"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                              </ul>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div> -->
-            <div class="copyright">
-               <div class="container">
-                  <div class="row">
-                     <div class="col-md-12">
-                        <p>© 2020 All Rights Reserved. Design by <a href="cloudtach.com"> Ubaid Ismail</a></p>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
+             End photo grid -->
+      <!-- </div>
+
+      </div>  -->
+
+      <!-- Contact Section -->
+      <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+         <h2 class="w3-text-light-grey">Contact Me</h2>
+         <hr style="width:200px" class="w3-opacity">
+
+         <div class="w3-section">
+            <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> UAE, Dubai</p>
+            <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +971 50 736 4124</p>
+            <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email:
+               ubaidismail378@gmail.com</p>
+         </div><br>
+         <!-- End Contact Section -->
+      </div>
+
+      <!-- Footer -->
+      <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+         <a href="https://www.linkedin.com/in/ubaidismail/" target="_blank"><i
+               class="fa fa-linkedin w3-hover-opacity"></i></a>
+         <p class="w3-medium">Powered by <a href="cloudtach.com" target="_blank"
+               class="w3-hover-text-green">Cloudtach</a></p>
+         <!-- End footer -->
       </footer>
-      <!-- end footer -->
-      <!-- Javascript files-->
-      <script src="js/jquery.min.js"></script>
-      <script src="js/bootstrap.bundle.min.js"></script>
-      <script src="js/jquery-3.0.0.min.js"></script>
-      <!-- sidebar -->
-      <script src="js/custom.js"></script>
-   </body>
+
+      <!-- END PAGE CONTENT -->
+   </div>
+
+</body>
+
 </html>
