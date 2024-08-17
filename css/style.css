@@ -313,8 +313,14 @@ button {
 .img_responsive {
      max-width: 100%;
 }
-
-
+.online-platform-logo img {
+     width: 100%;
+     background-color: #fff;
+     padding: 4px;
+     border-radius: 3px;
+     height: 40px;
+     object-fit: contain;
+ }
 /**-- heading section --**/
 
 

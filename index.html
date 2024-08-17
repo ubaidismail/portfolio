@@ -4,11 +4,14 @@
 <head>
    <title>Ubaid Ismail</title>
    <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    <link rel="stylesheet" href="css/style.css">
    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+   <link rel="stylesheet" href="https://unpkg.com/@material-tailwind/html@latest/styles/material-tailwind.css" />
+   <script src="https://cdn.tailwindcss.com"></script>
+
    <style>
       body,
       h1,
@@ -42,6 +45,8 @@
          }
       }
    </style>
+   <script src="https://unpkg.com/@material-tailwind/html@latest/scripts/script-name.js"></script>
+
 </head>
 
 <body class="w3-black">
@@ -89,37 +94,39 @@
 
       <!-- About Section -->
       <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
-         <h2 class="w3-text-light-grey">About Me</h2>
+         <h2 class="text-xl text-white mb-2">About Me</h2>
          <hr style="width:200px" class="w3-opacity">
-         <p>
-            A full stack developer with over 5 years of experience in designing, developing, and maintaining websites,
-            web applications, and SaaS solutions. My expertise spans across various stages of the development lifecycle,
+         <p class="mt-2">
+            I am a Software Developer with over 5 years of experience in designing, developing, and maintaining
+            websites,
+            web applications, and SaaS solutions and Mobile Apps. I have completed close to around 250+ projects. My
+            expertise spans across various stages of the development lifecycle,
             including requirements gathering, architecture design, coding, testing, and deployment. I am proficient in a
-            wide range of technologies, including HTML, CSS, JavaScript, React, PHP, Node.js, and various back-end
+            wide range of technologies, including LAMP STACK, MERN STACK, and various back-end
             frameworks. Additionally, I have experience with database management, version control systems, and cloud
             services.
 
             I am currently working as an external developer for international clients and companies, where I provide
-            high-quality development services tailored to their specific needs. My role involves collaborating closely
+            high-quality development and management services tailored to their specific needs. My role involves
+            collaborating closely
             with clients to understand their requirements, suggesting best practices, and delivering robust and scalable
             solutions.
          </p>
          <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
          <ul class="skills-tab">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Bootstrap</li>
-            <li>Scss</li>
-            <li>JavaScript</li>
-            <li>jQuery</li>
-            <li>MERN</li>
-            <li>Php</li>
-            <li>Codeigniter</li>
-            <li>MySQL</li>
-            <li>MongoDB</li>
-            <li>Git Github</li>
-            <li>Cloud Services</li>
             <li>Project Management</li>
+            <li>Cloud Services</li>
+            <li>Git/Github</li>
+            <li>MongoDB</li>
+            <li>MySQL</li>
+            <li>LAMP Stack</li>
+            <li>MERN Stack</li>
+            <li>React Native</li>
+            <li>Bootstrap</li>
+            <li>CSS</li>
+            <li>HTML</li>
+
+
 
          </ul>
 
@@ -129,22 +136,47 @@
                Partners
             </div>
             <div class="w3-quarter w3-section">
-               <span class="w3-xlarge">47+</span><br>
+               <span class="w3-xlarge">250+</span><br>
                Projects Done
             </div>
             <div class="w3-quarter w3-section">
-               <span class="w3-xlarge">89+</span><br>
+               <span class="w3-xlarge">120+</span><br>
                Happy Clients
             </div>
             <div class="w3-quarter w3-section">
-               <span class="w3-xlarge">150+</span><br>
+               <span class="w3-xlarge">300+</span><br>
                Meetings
             </div>
          </div>
+         <div class="grid grid-cols-1 gap-4 lg:grid-cols-5">
+            <div >
+               <a href="CV/ubaidCV Resume.pdf" download="ubaidCV">
+               <button
+               class="align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:pointer-events-none text-xs py-3 px-4 rounded-lg bg-gradient-to-tr from-gray-900 to-gray-400 text-white shadow-md shadow-gray-900/10 hover:shadow-lg hover:shadow-gray-900/20 active:opacity-[0.85] flex items-center gap-3"
+               type="button">
+               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                 class="w-5 h-5">
+                 <path stroke-linecap="round" stroke-linejoin="round"
+                   d="M12 16.5V9.75m0 0l3 3m-3-3l-3 3M6.75 19.5a4.5 4.5 0 01-1.41-8.775 5.25 5.25 0 0110.233-2.33 3 3 0 013.758 3.848A3.752 3.752 0 0118 19.5H6.75z">
+                 </path>
+               </svg>
+                   Download Resume
+               </button>
+            </a>
+            </div>
+            <div>
+               <div class="online-platform-logo">
+                  <a href="https://www.fiverr.com/ubaidismail280" target="_blank"><img src="images/Fiverr.png" alt="Fiverr"></a>
+               </div>
+            </div>
+            <div>
+               <div class="online-platform-logo">
+                  <a href="https://www.upwork.com/freelancers/~01efe0806a6ed2eee2" target="_blank"><img src="images/Upwork.png" alt="Upwork"></a>
+               </div>
+            </div>
+         </div>
 
-         <button class="w3-button w3-light-grey w3-padding-large w3-section">
-            <a href="CV/ubaidCV Resume.pdf" download="ubaidCV"><i class="fa fa-download"></i> Download Resume</a>
-         </button>
+
 
          <!-- Testimonials -->
          <div class="testimonial-area">
@@ -155,7 +187,8 @@
                      style="width:80px">
                </div>
                <div class="texti-inner">
-                  <p><span class="w3-large w3-margin-right">Arjun.</span> CTO at <strong>Pet Health Harbour</strong>.</p>
+                  <p><span class="w3-large w3-margin-right">Arjun.</span> CTO at <strong>Pet Health Harbour</strong>.
+                  </p>
                   <p>Ubaid was exceptionally well equipped to deliver this difficult task. He not only solved the issue
                      but also gave us more than expected. He always gives his best. Code quality and work ethics are top
                      notch. Will hire him again.</p>
@@ -177,8 +210,10 @@
                      style="width:80px">
                </div>
                <div class="texti-inner">
-                  <p><span class="w3-large w3-margin-right">Silviu Andrei Damian.</span> CEO at 𝗖𝗿𝗶𝗽𝘁𝗼𝘃𝗮𝗹𝘂𝘁𝗲 𝗚𝗿𝘂𝗽𝗽𝗼 𝗜𝘁𝗮𝗹𝗶𝗮𝗻𝗼 </p>
-                  <p>They did a great job, realizing my website. Even in the face of new requests and problems they were efficient and fast!
+                  <p><span class="w3-large w3-margin-right">Silviu Andrei Damian.</span> CEO at 𝗖𝗿𝗶𝗽𝘁𝗼𝘃𝗮𝗹𝘂𝘁𝗲
+                     𝗚𝗿𝘂𝗽𝗽𝗼 𝗜𝘁𝗮𝗹𝗶𝗮𝗻𝗼 </p>
+                  <p>They did a great job, realizing my website. Even in the face of new requests and problems they were
+                     efficient and fast!
                   </p>
                </div>
             </div>
@@ -228,7 +263,7 @@
       <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
          <a href="https://www.linkedin.com/in/ubaidismail/" target="_blank"><i
                class="fa fa-linkedin w3-hover-opacity"></i></a>
-         <p class="w3-medium">Powered by <a href="cloudtach.com" target="_blank"
+         <p class="w3-medium">Powered by <a href="http://cloudtach.com" target="_blank"
                class="w3-hover-text-green">Cloudtach</a></p>
          <!-- End footer -->
       </footer>
