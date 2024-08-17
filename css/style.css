@@ -1146,6 +1146,26 @@ ul.skills-tab li {
 }
 
 @media only screen and (max-width:767px){
+     ul.skills-tab li {
+          display: block;
+      }
+      div#contact p {
+          font-size: 14px;
+      }
+     .texti-inner img {
+          display: block;
+          text-align: center;
+          margin: 0 auto;
+          margin-bottom: 10px;
+      }
+      
+      
+     a.resume button {
+          width: 100%;
+          text-align: center;
+          margin: 0 auto;
+          justify-content: center;
+      }
      .block-testi {
           flex-direction: column;
       }
